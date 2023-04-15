@@ -10,7 +10,7 @@ urlpatterns = [
     path('countries/', include('countries.urls')),
     path('users/', include('users.urls')),
     # path('', include('info.urls')),
-    path('', include('facultes.urls'))
+    path('faculties/', include('facultes.urls'))
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

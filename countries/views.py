@@ -1,51 +1,24 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from .models import Country
 
 
-class KazakhView(ListView):
-    template_name = 'countries/kazah.html'
+def country_view(request):
+    if request.method == 'GET':
+        countries = Country.objects.all()
 
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
+        data = {
+            'countries': countries
+        }
 
-
-class ArmeniaView(ListView):
-    template_name = 'countries/armenia.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
+        return render(request, template_name='countries/country.html', context=data)
 
 
-class BelarusView(ListView):
-    template_name = 'countries/belarus.html'
+def detail_country_view(request, country_id):
+    if request.method == 'GET':
+        country = Country.objects.get(id=country_id)
 
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
+        data = {
+            'country': country
+        }
 
-
-class KyrgyzstanView(ListView):
-    template_name = 'countries/kyrgyz.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
-
-
-class TadjikistanView(ListView):
-    template_name = 'countries/tadjikistan.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
-
-
-class UzbekistanView(ListView):
-    template_name = 'countries/uzbek.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
-
-
-class VietnamView(ListView):
-    template_name = 'countries/vietnam.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
+        return render(request, template_name='countries/detail.html', context=data)

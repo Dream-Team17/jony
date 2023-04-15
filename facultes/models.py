@@ -13,7 +13,6 @@ class Comment(models.Model):
         return f'{self.faculty}'
 
 
-
 class Faculty(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=255)

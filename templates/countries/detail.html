@@ -1,0 +1,25 @@
+{% extends 'layouts/index.html' %}
+
+{% block title %}{{ country.title }}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <p class="text-center">{{ country.title}}</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="/media/{{ country.image_1 }}/" alt="картинка" width="320" height="240">
+            </div>
+            <div class="col-sm">
+                <img src="/media/{{ country.image_2 }}/" alt="картинка" width="320" height="240">
+            </div>
+            <div class="col-sm">
+                <img src="/media/{{ country.image_3 }}/" alt="картинка" width="320" height="240">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-justify">{{ country.description }}</p>
+    </div>
+{% endblock %}

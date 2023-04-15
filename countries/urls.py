@@ -1,15 +1,9 @@
 from django.urls import path
-from countries.views import KazakhView, ArmeniaView, BelarusView, KyrgyzstanView, TadjikistanView, UzbekistanView, \
-    VietnamView
+from .views import country_view, detail_country_view
 
 urlpatterns = [
-    path('kazakh/', KazakhView.as_view()),
-    path('armenia/', ArmeniaView.as_view()),
-    path('belarus/', BelarusView.as_view()),
-    path('kyrgyzstan/', KyrgyzstanView.as_view()),
-    path('tadjikistan/', TadjikistanView.as_view()),
-    path('uzbekistan/', UzbekistanView.as_view()),
-    path('vietnam/', VietnamView.as_view()),
+    path('', country_view),
+    path('<int:country_id>/', detail_country_view)
 ]
 
 # urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -18,23 +18,27 @@
             padding: 10px;
         }
     </style>
-    <div class="faculty">
-        <div class="title">
-            <h1>{{ faculty.title }}</h1>
-        </div>
-        <div class="img">
-            <img src="/media/{{ faculty.image_1 }}/" alt="" height="240px" width="320px">
-            <img src="/media/{{ faculty.image_2 }}/" alt="" height="240px" width="320px">
-            <img src="/media/{{ faculty.image_3 }}/" alt="" height="240px" width="320px">
 
-        </div>
-        <div class="info">
-            <div style="display: flex; justify-content: space-between">
-                <h1>{{ faculty.author.username }}</h1>
+        <div class="container">
+        <p class="text-center">{{ faculty.title}}</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="/media/{{ faculty.image_1 }}/" alt="картинка" width="320" height="240">
             </div>
-            <h5>{{ faculty.description }}</h5>
+            <div class="col-sm">
+                <img src="/media/{{ faculty.image_2 }}/" alt="картинка" width="320" height="240">
+            </div>
+            <div class="col-sm">
+                <img src="/media/{{ faculty.image_3 }}/" alt="картинка" width="320" height="240">
+            </div>
         </div>
     </div>
+    <div class="container">
+        <p class="text-justify">{{ faculty.description }}</p>
+    </div>
+
     <div class="comments">
         {% for comment in comments %}
             <div class="comment">

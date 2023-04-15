@@ -13,10 +13,10 @@ def faculties_view(request):
         return render(request, 'facultes/facult1.html', context=data)
 
 
-def detail_faculty_view(request, id):
+def detail_faculty_view(request, faculty_id):
     if request.method == 'GET':
-        faculty = Faculty.objects.get(id=id)
-        comments = Comment.objects.filter(faculty__id=id)
+        faculty = Faculty.objects.get(id=faculty_id)
+        comments = Comment.objects.filter(faculty__id=faculty_id)
 
         data = {
             'faculty': faculty,

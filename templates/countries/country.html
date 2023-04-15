@@ -1,0 +1,27 @@
+{% extends 'layouts/index.html' %}
+
+{% block title %}Страны{% endblock %}
+
+{% block content %}
+   <style>
+        .countries {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            width: 80%;
+            flex-wrap: wrap;
+        }
+    </style>
+    <div class="countries">
+        {% for country in countries %}
+            <div class="card_body">
+                <h5>{{ country.title }}</h5>
+                <a href="/countries/{{ country.id }}/" class="btn btn-primary">Посмотреть</a>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+
+{% endblock %}
