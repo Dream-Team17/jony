@@ -1,0 +1,1829 @@
+body {
+    background-color:#2F4F4F;
+    color: rgb(243, 235, 235);
+}
+.header {
+    max-width: 1197px;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+}
+.nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: (-50%, -50%);
+}
+.a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    padding: 20%;
+    font-size: 20%;
+    font-family: roboto;
+}
+.a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    width: 0;
+    background-color: #e67e22;
+}
+.a:hover::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    width: 90%;
+    background-color: #e67e22;
+    transition: 0.4s ease-in;
+}
+.active ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    width: 90%;
+    background-color: #e67e22;
+    transition: 0.4s ease-in;
+}
+.container {
+    max-width: 1197px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__text {
+    flex-basis: 490px;
+}
+
+.main__title {
+    position: absolute;
+width: 413px;
+height: 48px;
+Top:180px;
+Left:120px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 24px;
+text-align: center;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+
+.main__desc {
+    position: absolute;
+width: 530px;
+height: 120px;
+Top:230px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: -0.04em;
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .5);
+}
+
+.RF{position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 764px;
+    top: 161px;
+    
+    background: url(RF.jpg);
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.RF:hover{
+    transform: translate(-10px);
+}
+.KGZ{
+    position: absolute;
+width: 312px;
+height: 200px;
+left: 1084px;
+top: 161px;
+
+background: url(NACGVKR.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.KGZ:hover{
+    transform: translate(-10px);}
+.RB{
+    position: absolute;
+width: 347px;
+height: 220px;
+left: 1049px;
+top: 383px;
+
+background: url(RB.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.RB:hover{
+    transform: translate(-10px);}
+.kaz{
+    position: absolute;
+width: 274px;
+height: 266px;
+left: 764px;
+top: 383px;
+
+background: url(kaz.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.kaz:hover{
+    transform: translate(-10px);}
+
+.tjk{
+    position: absolute;
+width: 285px;
+height: 168px;
+left: 764px;
+top: 665px;
+
+background: url(TJK.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.tjk:hover{
+    transform: translate(-10px);}
+.viet{
+    position: absolute;
+width: 332px;
+height: 200px;
+left: 1064px;
+top: 644px;
+
+background: url(VIET.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.viet:hover{
+    transform: translate(-10px);}
+.uz{
+    position: absolute;
+width: 281px;
+height: 180px;
+left: 768px;
+top: 849px;
+
+background: url(UZ.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.uz:hover{
+    transform: translate(-10px);}
+.arm{
+    position: absolute;
+width: 297px;
+height: 154px;
+Top:871px;
+Left:1090px;
+
+background: url(ARM.jpg);
+border-radius: 20px;
+transition: transform 0.5s;
+}
+.arm:hover{
+    transform: translate(-10px);}
+
+
+.sait{
+    position: absolute;
+width: 450px;
+height: 55px;
+Top:106px;
+Left:120px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 24px;
+text-align: center;
+letter-spacing: -0.04em;
+color: #ffffff;
+}
+.emblema{
+    position: absolute;
+    width: 97px;
+    height: 122px;
+    left: 40px;
+    top: 3px;
+    
+    background: url(emblema.png);
+}
+.emblema1{
+    position: absolute;
+    width: 97px;
+    height: 122px;
+    left: 40px;
+    top: 3px;
+    
+    background: url(emblema.png);
+}
+.emblema2{
+    position: absolute;
+    width: 314px;
+    height: 247px;
+    left: 99px;
+    top: 312px;
+    
+    background: url(istory.jpg);
+    border-radius: 10px;   
+    
+}
+
+    
+.stroka{
+    position: absolute;
+width: 380px;
+height: 60px;
+left: 566px;
+top: 158px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.opis1{
+    position: absolute;
+width: 223px;
+height: 29px;
+left: 145px;
+top: 581px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.emblema3{
+    position: absolute;
+    width: 316px;
+    height:  247px;
+    left:570px;
+    top: 305px;
+    
+
+background: url(emblema.png);
+}
+.opia1{
+    position: absolute;
+width: 253px;
+height: 58px;
+left: 610px;
+top: 575px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.opis3{
+    position: absolute;
+width: 254px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.text1{
+    position: absolute;
+width: 1408px;
+height: 87px;
+Top:250px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text2{
+    position: absolute;
+width: 400px;
+height: 60px;
+Top:180px;
+ Left:610px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text3{
+    position: absolute;
+width: 1375px;
+height: 120px;
+Top:310px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text4{
+    position: absolute;
+width: 1375px;
+height: 120px;
+Top: 380px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text5{
+    position: absolute;
+    width: 1356px;
+    height: 120px;
+    Top:440px;
+Left:110px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;
+      
+}
+.text6{
+    position: absolute;
+width: 1061px;
+height: 60px;
+Top:500px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text7{
+    position: absolute;
+width: 964px;
+height: 60px;
+Top:530px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.text8{
+    position: absolute;
+width: 1201px;
+height: 60px;
+Top: 564px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text9{
+    position: absolute;
+width: 1204px;
+height: 60px;
+Top:590px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text10{
+    position: absolute;
+width: 1312px;
+height: 90px;
+Top:615px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.text11{
+    position: absolute;
+width: 1356px;
+height: 90px;
+Top:670px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.text12{
+    position: absolute;
+width: 1356px;
+height: 120px;
+Top:727px;
+Left:110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+
+color: #ffffff
+}
+.text13{
+    position: absolute;
+width: 1338px;
+height: 90px;
+left: 110px;
+top: 788px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+
+color: #ffffff;
+
+}
+.nazad{
+    position: absolute;
+width: 71px;
+height: 60px;
+Top:16px;
+Left:126px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+
+color: #ffffff;
+
+}
+.Footer{
+    position: absolute;
+    width: 232px;
+    height: 42px;
+    left: 79px;
+    top: 1245px;
+    Top:1050px;
+Left:179px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    
+    color: #ffffff;
+    
+}
+.Footer2{
+    position: absolute;
+    width: 508px;
+    height: 54px;
+    Top:1050px;
+Left:914px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    
+    color: #ffffff;
+    
+}
+.Footer3{
+    position: absolute;
+width: 411px;
+height: 54px;
+Top:1090px;
+Left:914px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+color: #ffffff;
+}
+.doska{
+    position: absolute;
+width: 275px;
+height: 39px;
+left: 638px;
+top: 169px;
+color: #000000;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #070707;
+
+}
+.pervyi{
+position: absolute;
+width: 150px;
+height: 39px;
+left: 40px;
+top: 325px;
+background: #e1f1c3;
+letter-spacing: -0.04em;
+border-radius: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+text-decoration: #063232;
+color: #000000;
+
+}
+.pervyi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.vtoroi{
+    position: absolute;
+width: 150px;
+height: 39px;
+left: 195px;
+top: 325px;
+background-color: #e1f1c3;
+letter-spacing: -0.04em;
+border-radius: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+
+color: #000000;
+
+}
+.vtoroi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.devatyi{
+    position: absolute;
+width: 285px;
+height: 39px;
+left: 1086px;
+top: 295px;
+background-color: #063232;
+letter-spacing: -0.04em;
+border-radius: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+
+color: #000000;
+
+}
+.devatyi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.chetvertyi{
+    position: absolute;
+width: 286px;
+height: 39px;
+left: 174px;
+top: 411px;
+background-color: #063232;
+letter-spacing: -0.04em;
+border-radius: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+
+color: #000000;
+
+}
+.chetvertyi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.moi{
+    position: absolute;
+width: 291px;
+height: 39px;
+left: 623px;
+top: 411px;
+background-color: #063232;
+letter-spacing: -0.04em;
+border-radius: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+
+color: #000000;
+}
+.moi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.pyatyi{
+    position: absolute;
+width: 290px;
+height: 39px;
+left: 1086px;
+top: 419px;
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size:  32px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+background-color: #063232;
+color: #e67e22;
+border-radius: 15%;
+}
+.pyatyi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.vosmoi{
+    position: absolute;
+width: 285px;
+height: 39px;
+left: 174px;
+top: 548px;
+transition: 2s;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+background-color: #063232;
+letter-spacing: -0.04em;
+border-radius: 15%;
+color: #000000;
+
+}
+.vosmoi:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.dve{
+    position: absolute;
+    width: 280px;
+    height: 39px;
+    left: 623px;
+    top: 548px;
+    background-color: #063232;
+letter-spacing: -0.04em;
+border-radius: 15%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    transition: 2s;
+    letter-spacing: -0.04em;
+    
+    color: #000000;
+    
+
+}
+.dve:hover{
+    color: #063232;
+    background-color: #fff;
+}
+.dvadchatyi{
+    position: absolute;
+width: 289px;
+height: 39px;
+left: 1089px;
+top: 548px;
+background-color: #063232;
+letter-spacing: -0.04em;
+border-radius: 15%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+transition: 2s;
+letter-spacing: -0.04em;
+
+color: #000000;
+
+}
+.dvadchatyi:hover{
+    color: #063232;
+    background-color: #434040;
+}
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  top:300px;
+  left:-790px;
+  height:759px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #393737;
+  left: 100px;
+}
+button {
+  position:absolute; 
+  top: 0;
+  right: 0px;
+  width: 52px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+  
+}
+.vvod{
+    top: 260px;
+    left:-825px;
+    position: relative;
+    padding-right: 100px;
+}
+.outputText{
+    top: 270px;
+    left: -940px;
+    position: relative;
+}
+.boevoi{
+    position: absolute;
+width: 350px;
+height: 447px;
+left: 90px;
+top: 263px;
+
+background: url(boevoi.jpg);
+border-radius: 10px;
+}
+.stengazeta{
+    position: absolute;
+width: 450px;
+height: 447px;
+top: 263px;
+left: 450px;
+background: url(stengazeta.jpg);
+border-radius: 10px;
+}
+.stengazeta22{
+    position: absolute;
+    width: 549px;
+    height: 39px;
+    left: 501px;
+    top: 160px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;
+}
+.istoria{
+    position: absolute;
+    width: 450px;
+    height: 447px;
+    top: 263px;
+    left: 910px;
+    background: url(stengazeta.jpg);
+    border-radius: 10px;
+}
+.kurs4{
+    position: absolute;
+width: 553px;
+height: 658px;
+left: 1110px;
+top: 575px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.kursantah{
+    position: absolute;
+width: 780px;
+height: 90px;
+left: 466px;
+top: 158px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.emblema4{
+    position: absolute;
+    width: 316px;
+    height:  247px;
+    left:1012px;
+    top: 300px;
+}
+.vitnamflag{
+    position: absolute;
+    width: 271px;
+    height: 185px;
+    left: 125px;
+    top: 242px;
+    
+    background: url(vitnamflag.jpg);
+}
+.belarusflag{
+    position: absolute;
+    width: 271px;
+    height: 185px;
+    left: 429px;
+    top: 242px;
+    
+    background: url(Belarus-Flag.png);
+}
+.armflag{
+    position: absolute;
+    width: 271px;
+    height: 185px;
+    left: 733px;
+    top: 242px;
+    
+    background: url(armenia.jpg);
+    
+}
+.tjklag{
+    position: absolute;
+    width: 271px;
+    height: 181px;
+    left: 1032px;
+    top: 242px;
+    
+    background: url(tjkаflag);
+}
+.kyrgyzflag{
+    position: absolute;
+width: 272px;
+height: 185px;
+left: 278px;
+top: 525px;
+
+background: url(kyrgyz);
+}
+.kazflag{
+    position: absolute;
+width: 271px;
+height: 183px;
+left: 613px;
+top: 525px;
+
+background: url(kazflag);
+
+}
+.uzbflag{
+    position: absolute;
+    width: 290px;
+    height: 183px;
+    left: 947px;
+    top: 525px;
+    
+    background: url(uzbek.jpg);
+}
+.vietnam{
+    position: absolute;
+    width: 129px;
+    height: 30px;
+    left: 196px;
+    top: 430px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    
+    color: #ffffff;
+
+}
+.belarus{
+    position: absolute;
+    width: 153px;
+    height: 60px;
+    left: 488px;
+    top: 436px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    
+    color: #ffffff;
+    
+}
+.armenia{
+    position: absolute;
+width: 145px;
+height: 60px;
+left: 802px;
+top: 430px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 30px;
+
+color: #ffffff;
+}
+.tadjik{
+    position: absolute;
+width: 163px;
+height: 60px;
+left: 1092px;
+top: 430px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 30px;
+
+color: #ffffff;
+
+}
+.kyrgyz{
+    position: absolute;
+    width: 158px;
+    height: 60px;
+    left: 356px;
+    top: 721px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+color: #ffffff;
+}
+.kazah{
+    position: absolute;
+width: 145px;
+height: 60px;
+left: 676px;
+top: 715px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 30px;
+
+color: #ffffff;
+}
+.uzbek{
+    position: absolute;
+width: 153px;
+height: 60px;
+left: 1023px;
+top: 715px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 30px;
+    
+    color: #ffffff;
+    
+}
+.vietnam1{
+    position: absolute;
+width: 952px;
+height: 79px;
+left: 472px;
+top: 90px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #ffffff;
+
+}
+.vietnam2{
+    position: absolute;
+width: 1358px;
+height: 956px;
+Top:137px;
+Left:18px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.vietnam3{
+    position: absolute;
+width: 352px;
+height: 175px;
+left: 96px;
+top: 250px;
+
+background: url(vietnam1.jpg);
+
+}
+.vietnam4{
+    position: absolute;
+width: 352px;
+height: 176px;
+left: 547px;
+top: 250px;
+
+background: url(vietnam3.jpg);
+
+}
+.vietnam5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 998px;
+    top: 250px;
+    
+    background: url(vietnam2.jpg);
+}
+.vietnam6{
+    position: absolute;
+width: 1326px;
+height: 507px;
+Top:410px;
+Left:17px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.vietnam7{
+    position: absolute;
+width: 1388px;
+height: 395px;
+left: 17px;
+top: 610px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+
+color: #ffffff;
+}
+.vietnam8{
+    position: absolute;
+width: 1307px;
+height: 234px;
+left: 17px;
+top: 720px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+
+color: #ffffff;
+
+}
+.belarus1{
+    position: absolute;
+width: 952px;
+height: 79px;
+left: 472px;
+top: 90px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.belarus2{
+    position: absolute;
+    width: 1358px;
+    height: 956px;
+    Top:137px;
+    Left:18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;
+}
+.belarus3{
+    position: absolute;
+    width: 352px;
+    height: 175px;
+    left: 56px;
+    top: 400px;
+    
+    background: url(vietnam1.jpg); 
+}
+.belarus4{
+    position: absolute;
+    width: 352px;
+    height: 176px;
+    left: 480px;
+    top: 400px;
+    
+    background: url(vietnam3.jpg);
+}
+.belarus5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 898px;
+    top: 400px;
+    
+    background: url(vietnam2.jpg); 
+}
+.belarus6{
+    position: absolute;
+width: 1388px;
+height: 395px;
+left: 18px;
+top: 570px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+
+color: #ffffff; 
+}
+.armenia1{
+    position: absolute;
+width: 952px;
+height: 79px;
+left: 472px;
+top: 90px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #ffffff;
+}
+.armenia2{
+    position: absolute;
+    width: 1358px;
+    height: 956px;
+    Top:137px;
+    Left:18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;  
+}
+.armenia3{
+    position: absolute;
+    width: 352px;
+    height: 175px;
+    left: 56px;
+    top: 290px;
+    
+    background: url(vietnam1.jpg);  
+}
+.armenia4{
+    position: absolute;
+    width: 352px;
+    height: 176px;
+    left: 480px;
+    top: 290px;
+    
+    background: url(vietnam3.jpg);
+}
+.armenia5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 898px;
+    top: 290px;
+    
+    
+}
+.armenia6{
+    position: absolute;
+    width: 1388px;
+    height: 395px;
+    left: 18px;
+    top: 460px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    
+    color: #ffffff; 
+}
+.tadjik1{
+    position: absolute;
+    width: 952px;
+    height: 79px;
+    left: 472px;
+    top: 90px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;
+}
+.tadjik2{
+    position: absolute;
+    width: 1358px;
+    height: 956px;
+    Top:137px;
+    Left:18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;    
+}
+.tadjik3{
+    position: absolute;
+    width: 352px;
+    height: 175px;
+    left: 56px;
+    top: 400px;
+}
+.tadjik4{
+    position: absolute;
+    width: 352px;
+    height: 176px;
+    left: 480px;
+    top: 400px;  
+}
+.tadjik5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 898px;
+    top: 400px;
+       
+}
+.tadjik6{
+    position: absolute;
+    width: 1388px;
+    height: 395px;
+    left: 18px;
+    top: 560px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    
+    color: #ffffff;  
+}
+.kg1{
+    position: absolute;
+    width: 952px;
+    height: 79px;
+    left: 472px;
+    top: 90px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    letter-spacing: -0.04em;
+    
+    color: #ffffff; 
+}
+.kg2{
+    position: absolute;
+    width: 1358px;
+    height: 956px;
+    Top:137px;
+    Left:18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;    
+}
+.kg3{
+    position: absolute;
+    width: 352px;
+    height: 175px;
+    left: 56px;
+    top: 360px;
+}
+.kg4{
+    position: absolute;
+    width: 352px;
+    height: 176px;
+    left: 480px;
+    top: 360px;  
+}
+.kg5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 898px;
+    top: 360px;
+}
+.kg6{
+    position: absolute;
+    width: 1388px;
+    height: 395px;
+    left: 18px;
+    top: 530px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    
+    color: #ffffff;  
+}
+.kz1{
+    position: absolute;
+    width: 952px;
+    height: 79px;
+    left: 472px;
+    top: 90px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    letter-spacing: -0.04em;
+    
+    color: #ffffff; 
+}
+.kz2{
+    position: absolute;
+    width: 1358px;
+    height: 956px;
+    Top:137px;
+    Left:18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;   
+}
+.kz3{
+    position: absolute;
+    width: 352px;
+    height: 175px;
+    left: 56px;
+    top: 400px;  
+}
+.kz4{
+    position: absolute;
+    width: 352px;
+    height: 176px;
+    left: 480px;
+    top: 400px;   
+}
+.kz5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 898px;
+    top: 400px;   
+}
+.kz6{
+    position: absolute;
+    width: 1388px;
+    height: 395px;
+    left: 18px;
+    top: 560px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    
+    color: #ffffff;    
+}
+.uz1{
+    position: absolute;
+    width: 952px;
+    height: 79px;
+    left: 472px;
+    top: 90px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    letter-spacing: -0.04em;
+    
+    color: #ffffff; 
+}
+.uz2{
+    position: absolute;
+    width: 1358px;
+    height: 956px;
+    Top:137px;
+    Left:18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    letter-spacing: -0.04em;
+    
+    color: #ffffff;    
+}
+.uz3{
+    position: absolute;
+    width: 352px;
+    height: 175px;
+    left: 56px;
+    top: 440px;  
+}
+.uz4{
+    position: absolute;
+    width: 352px;
+    height: 176px;
+    left: 480px;
+    top: 440px;     
+}
+.uz5{
+    position: absolute;
+    width: 343px;
+    height: 175px;
+    left: 898px;
+    top: 440px;   
+}
+.uz6{
+    position: absolute;
+    width: 1388px;
+    height: 395px;
+    left: 18px;
+    top: 600px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+    
+    color: #ffffff;    
+}
+/* Menu Dropdown */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.menu,
+.submenu {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+.menu {   
+ margin: 50px auto;
+ width: 800px;   
+ width: -moz-fit-content;
+ width: -webkit-fit-content;
+ width: fit-content; 
+}
+
+.menu > li {
+ background: #34495e;
+ float: left;
+ position: relative;
+ transform: skewX(25deg);
+}
+
+.menu a {
+ display: block;
+ color: #fff;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-family: Arial, Helvetica;
+ font-size: 14px;
+}  
+
+.menu li:hover {
+ background: #2d4d64;
+}  
+
+.menu > li > a {
+ transform: skewX(-25deg);
+ padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+ position: absolute;
+ width: 200px;
+ left: 50%; margin-left: -100px;
+ transform: skewX(-25deg);
+ transform-origin: left top;
+}
+
+.submenu li {
+ background-color: #2F4F4F;
+ position: relative;
+ overflow: hidden;  
+}      
+
+.submenu > li > a {
+ padding: 1em 2em;   
+}
+
+.submenu > li::after {
+ content: '';
+ position: absolute;
+ top: -125%;
+ height: 100%;
+ width: 100%;   
+ box-shadow: 0 0 50px rgba(0, 0, 0, .9);   
+}  
+
+.submenu > li:nth-child(odd){
+ transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+ transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+ right: -50%;
+ transform: skewX(-25deg) rotate(3deg);
+}    
+
+.submenu > li:nth-child(even){
+ transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+ transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+ left: -50%;
+ transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+ opacity: 0;
+ visibility: hidden;   
+}
+
+.submenu li {
+ transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+ opacity: 1;
+ visibility: visible;
+}  
+
+.menu > li:hover .submenu li:nth-child(even){
+ transform: skewX(25deg) translateX(15px);   
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+ transform: skewX(-25deg) translateX(-15px);   
+}

@@ -1,0 +1,47 @@
+{% extends 'layouts/index.html' %}
+{% block title %}{{ faculty.title }}{% endblock %}
+{% block content %}
+
+    <style>
+        .faculty {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .comments {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .comment {
+            background: #242b2e;
+            color: #fff;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+    </style>
+    <div class="faculty">
+        <div class="title">
+            <h1>{{ faculty.title }}</h1>
+        </div>
+        <div class="img">
+            <img src="/media/{{ faculty.image_1 }}/" alt="" height="240px" width="320px">
+            <img src="/media/{{ faculty.image_2 }}/" alt="" height="240px" width="320px">
+            <img src="/media/{{ faculty.image_3 }}/" alt="" height="240px" width="320px">
+
+        </div>
+        <div class="info">
+            <div style="display: flex; justify-content: space-between">
+                <h1>{{ faculty.author.username }}</h1>
+            </div>
+            <h5>{{ faculty.description }}</h5>
+        </div>
+    </div>
+    <div class="comments">
+        {% for comment in comments %}
+            <div class="comment">
+                <p class="author">{{ comment.author.username }}</p>
+                <p class="text">{{ comment.text }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
