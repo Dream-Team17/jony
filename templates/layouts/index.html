@@ -16,8 +16,40 @@
     <title>{% block title %}Document{% endblock %}</title>
 
 </head>
+    <style>
+    .emblema {
+    position: absolute;
+    width: 97px;
+    height: 122px;
+    left: 40px;
+    top: 3px;
+
+
+}
+ .header {
+    max-width: 1197px;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+{#.header__link {#}
+{#    color: #fff;#}
+{#    text-decoration: none;#}
+{#}#}
+
+    </style>
 <body>
         <header class="header">
+            <img src="/media/emblema.png" class="emblema" alt="">
             <a href="#" class="header__logo"></a>
             <div class="form">
             </div>
@@ -29,6 +61,7 @@
                 <li class="header__item"><a class="header__link" href="/city/">Информация о городе</a></li>
                 <li class="header__item"><a class="header__link" href="/faculty-5/">О факультете</a></li>
                 <li class="header__item"><a class="header__link" href="/library/">Электронная библиотека</a></li>
+                    <li class="header__item"><a class="header__link" href="/">Главная</a></li>
 
             </ul></nav>
         </header>

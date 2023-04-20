@@ -1,6 +1,7 @@
 {% extends 'layouts/index.html' %}
-
+{% block title %}Обучение в вузе проводится на 4-х факультетах:{% endblock %}
 {% block content %}
+
 <style>
         .faculties {
             display: flex;
@@ -10,16 +11,8 @@
             flex-wrap: wrap;
         }
     </style>
-<body>
-    <header class="header">
-        <a href="#" class="header__logo"></a>
-        <div class="form">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="/">Главная</a></li>
-            </ul></nav>
-    </header>
+
+
 <p class="fac">Обучение в вузе проводится на 4-х факультетах:</p>
     <div class="faculties">
         {% for faculty in faculties %}
@@ -32,7 +25,7 @@
     </div>
 
 
-</body>
-</html>
+
+
 
 {% endblock %}
