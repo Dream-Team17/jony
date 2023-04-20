@@ -1,0 +1,363 @@
+{% extends 'layouts/index.html' %}
+{% block title %}
+Череповец
+{% endblock %}
+{% block content %}
+
+    <style>
+    .most {
+    position: absolute;
+width: 1350px;
+height: 750px;
+left: 25px;
+top: 80px;
+
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35));
+border-radius: 30px;
+}
+.logo{
+z-index: 99;
+position: absolute;
+width: 572px;
+height: 171px;
+left: 470px;
+top: 260px;
+
+font-family: 'Playfair Display';
+font-style: italic;
+font-weight: 500;
+font-size: 128px;
+line-height: 171px;
+/* identical to box height */
+
+letter-spacing: -0.03em;
+
+color: #FFFFFF;
+}
+.slujba{
+    position: absolute;
+width: 433px;
+height: 39px;
+left: 38%;
+top: 520px;
+z-index: 99;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+color: #FFFFFF;
+
+}
+.gorod{
+    position: absolute;
+    width: 135px;
+    height: 39px;
+    left: 40px;
+    top: 916px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    letter-spacing: -0.04em;
+
+    {#color: #ffffff#}
+}
+.infa{
+    position: absolute;
+    width: 338px;
+    height: 306px;
+    left: 60px;
+    top: 982px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    /* or 127% */
+
+    letter-spacing: -0.04em;
+
+    {#color: #ffffff;#}
+
+
+}
+.infa2{
+    position: absolute;
+width: 335px;
+height: 252px;
+left: 421px;
+top: 990px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+
+}
+.infa3{
+    position: absolute;
+width: 284px;
+height: 479px;
+left: 838px;
+top: 1542px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+}
+.infa4{
+    position: absolute;
+width: 270px;
+height: 503px;
+left: 1143px;
+top: 1542px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+}
+.pamat{
+position: absolute;
+width: 620px;
+height: 479px;
+left: 764px;
+top: 990px;
+
+background: url(pamatnic.jpg);
+border-radius: 20px;
+}
+.verh{
+    position: absolute;
+width: 620px;
+height: 479px;
+left: 40px;
+top: 1542px;
+
+background: url(vidsverhy.jpg);
+border-radius: 20px;
+}
+.infa5{
+    position: absolute;
+width: 347px;
+height: 574px;
+left: 60px;
+top: 2094px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+
+}
+.infa6{
+    position: absolute;
+width: 295px;
+height: 394px;
+left: 461px;
+top: 2094px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+
+
+}
+.zavod{
+    position: absolute;
+width: 630px;
+height: 483px;
+
+background: url(cherep.jpg);
+border-radius: 20px;
+Top: 2110px;
+Left: 780px;
+
+}
+.teatr{
+    position: absolute;
+width: 718.5px;
+height: 479px;
+left: 38px;
+top: 2631px;
+
+background: url(teatr.jpg);
+border-radius: 20px;
+}
+.infa7{
+    position: absolute;
+    width: 305px;
+    height: 479px;
+    left: 817px;
+    top: 2631px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    /* or 127% */
+
+    letter-spacing: -0.04em;
+
+    {#color: #ffffff;#}
+
+}
+.infa8{
+    position: absolute;
+width: 240px;
+height: 386px;
+left: 1143px;
+top: 2631px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+}
+.dym{
+    position: absolute;
+width: 650px;
+height: 469px;
+left: 756px;
+top: 3147px;
+
+background: url(zavod.jpg);
+border-radius: 20px;
+}
+.infa9{
+    position: absolute;
+width: 351px;
+height: 528px;
+Top:3130px;
+Left:55px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+
+}
+.infa10{
+    position: absolute;
+width: 307px;
+height: 561px;
+Top:3130px;
+Left:450px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+/* or 127% */
+
+letter-spacing: -0.04em;
+
+{#color: #ffffff;#}
+}
+    </style>
+    <p class="logo">Череповец</p>
+	<p class="slujba">Город в котором ты служишь</p>
+	<img src="/media/new most.jpg" class="most" alt="">
+	<p class="gorod">О городе</p>
+	<p class="infa">Череповец — самый большой город
+		 Вологодской области, крупный 
+		 промышленный центр,
+		 расположен на реке Шексне
+		(левый приток Волги), в устье 
+		реки Ягорбы.В городе успешно 
+		работают огромные 
+		предприятия - ОАО 
+		«Северсталь», ОАО «Аммофос»,
+		 ОАО «Северсталь-метиз», ОАО 
+		 «Череповецкий «Азот».</p>
+		 <p class="infa2"> Кроме того, это единственный районный центр в России, 
+			имеющий свой университет — Череповецкий государственный университет. 
+			В Череповце расположен старейший в области музей, множество учреждений культуры, театры, торговые центры.</p>
+	<p class="infa3">Первые упоминания о городе датируются 1362 годом. Именно тогда здесь был основан Воскресенский мужской монастырь. 
+		В документах говорится, что монахи поселились на уже заселенной местности, которая называлась "Череповесь". 
+		Со временем вокруг монастыря появилось множество мелких деревень,</p>
+		<p class="infa4">наибольшим среди них было торговое село Федосьево,
+			которое впоследствии стало основою для города, история которого начинается с 4 ноября 1777 года. 
+		   Именно тогда императрица Екатерина II подписала указ об учреждении в Новгородской губернии «для пользы водных коммуникаций» нового города.</p>
+		<img src="/media/pamatnic.jpg" class="pamat" alt="">
+		<img src="/media/vidsverhy.jpg" class="verh" alt="">
+		<p class="infa5">Расположенный на крупной реке Шексне, город стал знаменит единственным в России тех лет рыбным промыслом – местная стерлядь считалась деликатесом и доставлялась исключительно к царскому столу. Однако в дальнейшем Череповец чуть не исчез с карты страны. Дело в том, 
+		что император Павел I 12 декабря1796 подписал новый указ, который предписывал упразднить города, «которые окажутся лишними».</p>
+		<p class="infa6">На несколько лет Череповец стал посадом без магистрата и ратуши. Лишь в 1802 году Сенат вновь возвращает Череповцу статус города с приписанным ему уездом.Долгое время город на Шексне оставался заурядным уездным городком. 
+		Лишь с началом строительства Мариинской водной системы начинается бурное его развитие. </p>
+		<img src="/media/cherep.jpg" class="zavod" alt="">
+		<img src="/media/teatr.jpg" class="teatr" alt="">
+		<p class="infa7">Одной из достопримечательностей и символом города является Воскресенский собор, который был возведен в стиле позднего барокко в 1752 году. 
+		Также стоит отметить, что в городе в 1979 году через реку Шексна был открыт Октябрьский мост - первый автомобильный вантовый мост в России и гордость жителей Череповца.</p>
+		<p class="infa8">Город на Шексне знаменит своими жителями. Здесь в разные годы жили и творили поэт Игорь Северянин, братья Верещагины – известный художник и создатель бренда «Вологодское масло», герой СССР Валерий Павлович Чкалов, легенда рока Александр Башлачев.</p>
+		<img src="/media/zavod.jpg" class="dym" alt="">
+		<p class="infa9">Результаты многолетних наблюдений за состоянием атмосферного воздуха, выполняемые лабораторией Росгидромета показывают, что все жилые кварталы города в той или иной мере испытывают определённую техногенную нагрузку. Анализ помесячной динамики комплексного показателя загрязнения атмосферы позволяет сделать вывод, что наиболее неблагоприятная ситуация
+		 в городе формируется в весенне-осенний период, когда наиболее часто возникают неблагоприятные метеоусловия (НМУ),</p>
+		 <p class="infa10">ухудшающие рассеивание вредных веществ и способствующие их накоплению в атмосфере в результате слабого ветра, воздействия термической устойчивости и формирования инверсий, или меняющие направление переноса примесей, выбрасываемых в атмосферу. В этой связи наиболее неблагоприятными для города является 
+		западное направление ветра, поскольку при этом направлении выбросы от многих источников переносятся в сторону жилой застройки.</p>
+		<img src="/media/emblema.png" class="emblema" alt="">
+
+
+</body>
+</html>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

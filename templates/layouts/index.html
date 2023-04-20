@@ -21,7 +21,7 @@
     position: absolute;
     width: 97px;
     height: 122px;
-    left: 40px;
+    left: 3px;
     top: 3px;
 
 
@@ -40,7 +40,52 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.Footer{
+    position: absolute;
+    width: 232px;
+    height: 42px;
+    left: 79px;
+    top: 1245px;
+    Top:1050px;
+Left:179px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
 
+    {#color: #ffffff;#}
+
+}
+.Footer2{
+    position: absolute;
+    width: 508px;
+    height: 54px;
+    Top:1050px;
+Left:914px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+
+    {#color: #ffffff;#}
+
+}
+.Footer3{
+    position: absolute;
+width: 411px;
+height: 54px;
+Top:1090px;
+Left:914px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+{#color: #ffffff;#}
+}
 {#.header__link {#}
 {#    color: #fff;#}
 {#    text-decoration: none;#}
@@ -60,7 +105,7 @@
                 <li class="header__item"><a class="header__link" href="/board/">Доска объявлений</a></li>
                 <li class="header__item"><a class="header__link" href="/city/">Информация о городе</a></li>
                 <li class="header__item"><a class="header__link" href="/faculty-5/">О факультете</a></li>
-                <li class="header__item"><a class="header__link" href="/library/">Электронная библиотека</a></li>
+                <li class="header__item"><a class="header__link" href="/edu/library/">Электронная библиотека</a></li>
                     <li class="header__item"><a class="header__link" href="/">Главная</a></li>
 
             </ul></nav>
@@ -69,13 +114,13 @@
 
 {% endblock %}
 
-
+{% block footer %}
         <div class="footer">
             <p class="Footer">Все права защищены  </p>
     <p class="Footer2">Над проектом работал курсант Мамбетов Ж.Т. </p>
     <p class="Footer3">Руководитель ГП ВС РФ Щегряев Н.А. </p>
         </div>
-
+{% endblock %}
 </body>
 </html>
 

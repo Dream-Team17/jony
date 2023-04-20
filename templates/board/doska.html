@@ -1,0 +1,27 @@
+{% extends 'layouts/index.html' %}
+{% block title %}Доска объявлений{% endblock %}
+{% block content %}
+
+       <style>
+        .groups {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            width: 80%;
+            flex-wrap: wrap;
+        }
+
+    </style>
+        <a class="doska" href="">Доска объявлений</a>
+    <div class="groups">
+        {% for board in boards %}
+            <div class="card_body">
+                <h5>{{ board.title }}</h5>
+                <a href="/board/{{ board.id }}/" class="btn btn-primary">Посмотреть</a>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}

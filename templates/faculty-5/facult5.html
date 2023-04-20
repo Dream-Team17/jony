@@ -1,0 +1,89 @@
+
+{% extends 'layouts/index.html' %}
+{% block title %}
+Специальный факультет
+{% endblock %}
+
+{% block content %}
+    <style>
+    .stroka{
+position: absolute;
+width: 340px;
+height: 30px;
+top:15%;
+Left:580px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+letter-spacing: -0.04em;
+text-decoration: none;}
+{#color: #ffffff;#}
+{#.emblema2 {#}
+{#    position: absolute;#}
+{#    width: 314px;#}
+{#    height: 247px;#}
+{#    left: 99px;#}
+{#    top: 312px;#}
+{##}
+{#    background: url(istory.jpg);#}
+{#    border-radius: 10px;#}
+{##}
+{#}#}
+{#.emblema3{#}
+{#    position: absolute;#}
+{#    width: 316px;#}
+{#    height:  247px;#}
+{#    left:570px;#}
+{#    top: 305px;#}
+{##}
+{##}
+{#background: url(emblema.png);#}
+{#}#}
+{#.emblema4{#}
+{#    position: absolute;#}
+{#    width: 316px;#}
+{#    height:  247px;#}
+{#    left:1012px;#}
+{#    top: 300px;#}
+{#}#}
+.container {
+    margin-top: 50px;
+}
+.row {
+    margin-top: 100px;
+}
+.col-sm {
+    margin-top: 100px;
+}
+
+
+    </style>
+    <p class="stroka"> СПЕЦИАЛЬНЫЙ ФАКУЛЬТЕТ</p>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="/media/istory.jpg" class="emblema2" alt="" width="320px" height="240px">
+        <a class="opis1" href="history.html">История факультета</a>
+    </div>
+    <div class="col-sm">
+      <img src="/media/stengazeta.jpg" class="emblema3" alt="" width="320px" height="240px">
+        <a class="opia1" href="stengazeta.html">Стенгазета факультета</a>
+    </div>
+    <div class="col-sm">
+      <img src="/media/emblema.png" class="emblema4" alt="" width="320px" height="240px">
+        <a class="kurs4" href="kursant.html">  Информация о странах </a>
+    </div>
+  </div>
+</div>
+
+{#            <img src="/media/istory.jpg" class="emblema2" alt="" width="320px" height="240px">#}
+{#            <img src="/media/stengazeta.jpg" class="emblema3" alt="" width="320px" height="240px">#}
+{#            <img src="/media/emblema.png" class="emblema4" alt="" width="320px" height="240px">#}
+{#            <a class="opis1" href="history.html">История факультета</a>#}
+{#            <a class="opia1" href="stengazeta.html">Стенгазета факультета</a>#}
+{#            <a class="kurs4" href="kursant.html">  Информация о странах </a>#}
+
+
+{% endblock %}
