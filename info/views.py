@@ -1,11 +1,17 @@
 from django.shortcuts import render
-
-# Create your views here.
-from django.views.generic import ListView
-
-
-class IndexView(ListView):
-    template_name = 'info/index.html'
-
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
+# from .models import MainImage
+#
+# # Create your views here.
+# def index_view(request):
+#     if request.method == 'GET':
+#
+#         return render(request, template_name='layouts/index.html')
+#
+# def main_image_view(request):
+#     if request.method == 'GET':
+#         images = MainImage.objects.all()
+#         data = {
+#             'images': images
+#         }
+#
+#         return render(request, template_name='info/main_page.html', context=data)

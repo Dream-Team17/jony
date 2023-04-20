@@ -10,7 +10,7 @@ def faculties_view(request):
         data = {
             'faculties': faculties
         }
-        return render(request, 'facultes/facult1.html', context=data)
+        return render(request, 'facultes/svedenia.html', context=data)
 
 
 def detail_faculty_view(request, faculty_id):

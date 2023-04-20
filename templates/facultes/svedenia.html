@@ -1,0 +1,38 @@
+{% extends 'layouts/index.html' %}
+
+{% block content %}
+<style>
+        .faculties {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            width: 80%;
+            flex-wrap: wrap;
+        }
+    </style>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo"></a>
+        <div class="form">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="/">Главная</a></li>
+            </ul></nav>
+    </header>
+<p class="fac">Обучение в вузе проводится на 4-х факультетах:</p>
+    <div class="faculties">
+        {% for faculty in faculties %}
+            <div class="card_body">
+                <img src="/media/{{ faculty.image_1 }}/" class="radio" alt="" width="320" height="240">
+                <h5>{{ faculty.title }}</h5>
+                <a href="/faculties/{{ faculty.id }}/" class="btn btn-primary">Посмотреть</a>
+            </div>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>
+
+{% endblock %}

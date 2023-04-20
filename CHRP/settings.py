@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'countries',
     'facultes',
     'groups',
-    'info',
+    # 'info',
     'special',
     'users',
+    'info_2',
 ]
 
 MIDDLEWARE = [
