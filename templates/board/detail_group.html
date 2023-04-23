@@ -1,28 +1,36 @@
 {% extends 'layouts/index.html' %}
 {% block title %}{{ board.title }}{% endblock %}
 {% block content %}
-{#            <a class="doska" href="">{{ board.title }}</a>#}
-{#            <input class="vvod" type="text" id="inputText" value="" placeholder="Введите объявление...">#}
-{#            <button onclick="saveText()"class="pervyi">Сохранить</button>#}
-{#            <button onclick="loadText()"class="vtoroi" >Загрузить</button>#}
-{#            <p id="outputText"></p>#}
-{#            #}
-{#            <script>#}
-{#             function  saveText()  { #}
-{#              var input = document.getElementById("inputText").value;#}
-{#              localStorage.setItem("savedText", input);#}
-{#             }#}
-{#           #}
-{#             function loadText() {#}
-{#              var savedText = localStorage.getItem("savedText");#}
-{#              if (savedText !== null) {#}
-{#               document.getElementById("outputText").innerHTML = savedText;#}
-{#              }#}
-{#              class outputText{#}
-{#         #}
-{#              }#}
-{#             }#}
-{#            </script>#}
+  <style>
+        .faculty {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .comments {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .comment {
+            background: #242b2e;
+            color: #fff;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+    </style>
+ <div class="container">
+        <p class="text-center">{{ gruppa.title}}</p>
+    </div>
+
+
+
+    <div class="comments">
+        {% for announcement in announcements %}
+            <div class="comment">
+                <p class="author">{{ announcement.author.username }}</p>
+                <p class="text">{{ announcement.text }}</p>
+            </div>
+        {% endfor %}
+    </div>
 
 
 {% endblock %}

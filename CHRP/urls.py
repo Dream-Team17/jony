@@ -11,7 +11,7 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('faculties/', include('facultes.urls')),
     path('edu/', include('edu.urls')),
-    path('board/', include('board.urls')),
+    path('boards/', include('boards.urls')),
     path('city/', include('city.urls')),
     path('faculty-5/', include('faculty_5.urls'))
 ]

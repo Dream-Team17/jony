@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,6 +15,10 @@
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"></script>
     <title>{% block title %}Document{% endblock %}</title>
+{% block css %}
+
+{% endblock %}
+{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
 
 </head>
     <style>
@@ -102,7 +107,7 @@ line-height: 27px;
                 <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="/faculties/">Сведения об образовательной деятельности</a></li>
                 <li class="header__item"><a class="header__link" href="/edu/">Образование</a></li>
-                <li class="header__item"><a class="header__link" href="/board/">Доска объявлений</a></li>
+                <li class="header__item"><a class="header__link" href="/boards/">Доска объявлений</a></li>
                 <li class="header__item"><a class="header__link" href="/city/">Информация о городе</a></li>
                 <li class="header__item"><a class="header__link" href="/faculty-5/">О факультете</a></li>
                 <li class="header__item"><a class="header__link" href="/edu/library/">Электронная библиотека</a></li>
