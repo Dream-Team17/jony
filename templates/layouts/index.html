@@ -111,6 +111,13 @@ line-height: 27px;
                 <li class="header__item"><a class="header__link" href="/city/">Информация о городе</a></li>
                 <li class="header__item"><a class="header__link" href="/faculty-5/">О факультете</a></li>
                 <li class="header__item"><a class="header__link" href="/edu/library/">Электронная библиотека</a></li>
+                    {% if user %}
+                        <p class="header__link">Пользователь: {{ user.username }}</p>
+                        <a href="/users/logout/" class="btn btn-primary">Выйти</a>
+                    {% else %}
+                        <a href="/users/login/" class="btn btn-primary">Войти</a>
+                        <a href="/users/register/" class="btn btn-primary">Регистация</a>
+                    {% endif %}
                     <li class="header__item"><a class="header__link" href="/">Главная</a></li>
 
             </ul></nav>

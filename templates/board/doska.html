@@ -13,6 +13,13 @@
 
     </style>
         <a class="doska" href="">Доска объявлений</a>
+    <div style="margin-top: 5%">
+        <form action="/boards/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-primary" value="Создать" style="margin-left: 10%; margin-bottom: 5%;">
+        </form>
+    </div>
     <div class="groups">
         {% for board in boards %}
             <div class="card_body">

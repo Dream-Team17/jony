@@ -3,4 +3,4 @@ from .models import Faculty, Comment
 # Register your models here.
 
 admin.site.register(Faculty)
-admin.site.register(Comment)
+# admin.site.register(Comment)

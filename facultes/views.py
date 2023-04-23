@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+
 from .models import Faculty, Comment
+from users.utils import get_user_from_request
 
 
 def faculties_view(request):
@@ -8,7 +9,8 @@ def faculties_view(request):
         faculties = Faculty.objects.all()
 
         data = {
-            'faculties': faculties
+            'faculties': faculties,
+            'user':get_user_from_request(request)
         }
         return render(request, 'facultes/svedenia.html', context=data)
 
@@ -20,6 +22,7 @@ def detail_faculty_view(request, faculty_id):
 
         data = {
             'faculty': faculty,
+            'user': get_user_from_request(request)
             # 'comments': comments
         }
 

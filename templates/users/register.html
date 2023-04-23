@@ -1,11 +1,15 @@
 {% extends 'layouts/index.html' %}
-
+{% block title %}
+Регистрация
+{% endblock %}
 {% block content %}
-    <div class="form">
+    <div class="form" style="margin-top: 10%; margin-left: 40%">
         <form action="/users/register/" method="post">
             {% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit" value="Register" class="btn btn-primary">
+            <table>
+            {{ form.as_table }}
+                </table>
+            <input type="submit" value="Регистрация" class="btn btn-primary" style="margin-left: 15%">
         </form>
     </div>
 
